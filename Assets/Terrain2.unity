@@ -2849,6 +2849,7 @@ GameObject:
   - component: {fileID: 353320488}
   - component: {fileID: 353320490}
   - component: {fileID: 353320489}
+  - component: {fileID: 353320491}
   m_Layer: 0
   m_Name: pCube11
   m_TagString: Untagged
@@ -2913,6 +2914,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 353320487}
   m_Mesh: {fileID: 4300000, guid: fdd9b02841aa99648a6f75ccb6e51e6d, type: 3}
+--- !u!114 &353320491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353320487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5fe73c0203b91746955daafd5e4d8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: 30
 --- !u!1001 &354206977
 Prefab:
   m_ObjectHideFlags: 0
@@ -16047,7 +16060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4350388578874462, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.11182079
+      value: 0.1118208
       objectReference: {fileID: 0}
     - target: {fileID: 4350388578874462, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.y
@@ -16334,7 +16347,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896345273}
-  m_LocalRotation: {x: -0.003495776, y: -0.9939522, z: 0.033214502, w: -0.10461197}
+  m_LocalRotation: {x: -0.0034957775, y: -0.9939522, z: 0.033214495, w: -0.10461203}
   m_LocalPosition: {x: -1.0409546, y: 0.5700073, z: 4.890442}
   m_LocalScale: {x: 0.25063738, y: 0.2506373, z: 0.2506373}
   m_Children: []
