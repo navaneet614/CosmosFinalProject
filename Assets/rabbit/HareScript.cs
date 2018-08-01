@@ -15,7 +15,7 @@ public class HareScript : MonoBehaviour {
     public float maxWaitTime = 5f;
     public float jumpHeight = 1f;
     private float distance, angle;
-    private bool moving = true, onGround = true;
+    private bool moving = true, onGround = true, paused;
 
     // Use this for initialization
     void Start () {
@@ -31,6 +31,17 @@ public class HareScript : MonoBehaviour {
         {
             GetComponent<Rigidbody>().AddForce(0, jumpHeight, 0, ForceMode.Impulse);
             onGround = false;
+        }
+
+        if (Time.timeScale == 0f)
+        {
+            paused = true;
+            StopAllCoroutines();
+        }
+        else if (paused)
+        {
+            PickPosition();
+            paused = false;
         }
     }
 

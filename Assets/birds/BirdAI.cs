@@ -13,13 +13,29 @@ public class BirdAI : MonoBehaviour
     public float minWaitTime = 1f;
     public float maxWaitTime = 5f;
     private float distance, angle;
-    private bool running;
+    private bool running, paused;
 
 
     void Start()
     {
         PickPosition();
     }
+
+    void Update()
+    {
+        if (Time.timeScale == 0f)
+        {
+            paused = true;
+            StopAllCoroutines();
+        }
+        else if (paused)
+        {
+            PickPosition();
+            paused = false;
+        }
+    }
+
+
 
     void PickPosition()
     {
