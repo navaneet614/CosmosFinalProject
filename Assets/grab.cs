@@ -3,27 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class grab : MonoBehaviour {
+public class grab : MonoBehaviour
+{
 
     private GameObject man;
     public Text pickF;
     private bool destroyed;
     private bool isClose;
-    private Pause script;
-    public int objNum;
+    private ItemDisplay script;
+    public string objName;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         man = GameObject.Find("fireBro2");
         pickF.text = "";
         destroyed = false;
         isClose = true;
-        script = GameObject.Find("Canvas").GetComponent<Pause>();
-	}
-    
+        script = GameObject.Find("fireBro2").GetComponent<ItemDisplay>();
+    }
+
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
         Vector3 pos = man.transform.position;
         if (!destroyed && Vector3.Distance(pos, transform.position) <= 5)
         {
@@ -34,7 +37,7 @@ public class grab : MonoBehaviour {
             {
                 pickF.text = "";
                 destroyed = true;
-                script.toDisplay[objNum] = true;
+                script.AddItem(objName);
                 Destroy(gameObject, 0);
             }
         }
@@ -47,6 +50,5 @@ public class grab : MonoBehaviour {
         {
             pickF.text = "";
         }
-	}
+    }
 }
- 
