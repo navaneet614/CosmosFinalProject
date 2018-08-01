@@ -8,7 +8,7 @@ public class Pause : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey("escape"))
+        if (Input.GetKeyDown("escape"))
         {
             paused = togglePause();
 
