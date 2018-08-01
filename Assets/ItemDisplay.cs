@@ -38,6 +38,10 @@ public class ItemDisplay : MonoBehaviour
             }
             timeCounter--;
         }
+        if (counter > 4)
+        {
+            GUILayout.Label("You've collected all the items! Return to the campfire");
+        }
     }
 
     public void AddItem(string name)
