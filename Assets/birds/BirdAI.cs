@@ -18,7 +18,7 @@ public class BirdAI : MonoBehaviour
 
     void Start()
     {
-        PickPosition();
+        PickPosition(false);
     }
 
     void Update()
@@ -30,14 +30,14 @@ public class BirdAI : MonoBehaviour
         }
         else if (paused)
         {
-            PickPosition();
+            PickPosition(false);
             paused = false;
         }
     }
 
 
 
-    void PickPosition()
+    void PickPosition(bool b)
     {
         if (running)
         {
@@ -45,24 +45,21 @@ public class BirdAI : MonoBehaviour
         }
         distance = Random.Range(minDistance, maxDistance);
         angle = Random.Range(minAngle, maxAngle);
+        if (b)
+        {
+            angle = 180;
+        }
         StartCoroutine("MoveToRandomPos");
 
     }
 
     void OnCollisionEnter(Collision col)
     {
-
-        if (col.gameObject.name == "Terrain_2" || col.gameObject.name == "Uneven_Ground_Dirt_01 1")
-        {
-
-        }
-        else
-        {
             distance = 0;
             angle = 0;
 
-            PickPosition();
-        }
+            PickPosition(true);
+        
     }
 
     IEnumerator MoveToRandomPos()
@@ -90,6 +87,6 @@ public class BirdAI : MonoBehaviour
 
         distance = 0;
         angle = 0;
-        PickPosition();
+        PickPosition(false);
     }
 }
