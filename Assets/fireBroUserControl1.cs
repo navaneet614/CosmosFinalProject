@@ -8,6 +8,8 @@ public class fireBroUserControl1 : MonoBehaviour
     public float speed = 5f;
     public float rotSpeed = 5f;
 
+
+
    
     void Update()
     {
@@ -15,12 +17,16 @@ public class fireBroUserControl1 : MonoBehaviour
         var z = speed * Input.GetAxis("Vertical") * Time.deltaTime;
 
 
+      
 
-       
+
+
 
         transform.Rotate(0, x, 0);
         transform.Translate(0, 0, z);
     }
+
+
 
     
 

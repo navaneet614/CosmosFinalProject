@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39305365, g: 0.4348277, b: 0.49597704, a: 1}
+  m_IndirectSpecularColor: {r: 0.39303762, g: 0.43488893, b: 0.49600667, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -168,7 +168,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1339294
@@ -284,7 +285,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &13188715
@@ -342,7 +344,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &15035137
@@ -400,7 +403,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &27777470 stripped
@@ -608,7 +612,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &53422747
@@ -666,7 +671,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &63935850
@@ -1047,7 +1053,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &148927931 stripped
@@ -1118,7 +1125,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &157418086
@@ -1367,7 +1375,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &192714217
@@ -1744,7 +1753,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &244566718
@@ -2003,7 +2013,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &258431067
@@ -2409,7 +2420,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!4 &327350320 stripped
@@ -2573,7 +2585,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &342412717
@@ -2747,7 +2760,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &352004650
@@ -2835,6 +2849,7 @@ GameObject:
   - component: {fileID: 353320488}
   - component: {fileID: 353320490}
   - component: {fileID: 353320489}
+  - component: {fileID: 353320491}
   m_Layer: 0
   m_Name: pCube11
   m_TagString: Untagged
@@ -2899,6 +2914,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 353320487}
   m_Mesh: {fileID: 4300000, guid: fdd9b02841aa99648a6f75ccb6e51e6d, type: 3}
+--- !u!114 &353320491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353320487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5fe73c0203b91746955daafd5e4d8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max: 30
 --- !u!1001 &354206977
 Prefab:
   m_ObjectHideFlags: 0
@@ -2988,8 +3015,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 68, y: 100, z: 2}
-  m_Center: {x: 0, y: 0, z: 22}
+  m_Size: {x: 68, y: 500, z: 2}
+  m_Center: {x: 0, y: 250, z: 22}
 --- !u!65 &360505389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3000,8 +3027,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 100, z: 50}
-  m_Center: {x: -33, y: 0, z: 0}
+  m_Size: {x: 2, y: 500, z: 50}
+  m_Center: {x: -33, y: 250, z: 0}
 --- !u!65 &360505390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3012,8 +3039,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 100, z: 50}
-  m_Center: {x: 27, y: 0, z: 0}
+  m_Size: {x: 2, y: 500, z: 50}
+  m_Center: {x: 27, y: 250, z: 0}
 --- !u!65 &360505391
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3024,8 +3051,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 62, y: 100, z: 2}
-  m_Center: {x: -3, y: 0, z: -22}
+  m_Size: {x: 62, y: 500, z: 2}
+  m_Center: {x: -3, y: 250, z: -22}
 --- !u!1001 &364741893
 Prefab:
   m_ObjectHideFlags: 0
@@ -3173,6 +3200,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b13c18543ddca77479ddb533e850902f, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1001 &388809839
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 639.1055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 405.48334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1336.4784
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314104875440758, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 087c817993b065e489e82bcdb1316d4e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &404340816
 Prefab:
@@ -3420,7 +3489,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &459989302
@@ -3744,7 +3814,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &506609092
@@ -3884,7 +3955,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &529249228
@@ -4017,7 +4089,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &571251839
@@ -4449,7 +4522,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &641532704
@@ -4623,7 +4697,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &655071854
@@ -4681,7 +4756,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &682003546
@@ -4739,7 +4815,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &682652831
@@ -4797,7 +4874,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &686511882
@@ -4855,7 +4933,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &690381832
@@ -5167,7 +5246,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &747324603
@@ -5390,7 +5470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b00ce109a5b959d40adeb466e0877f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 10
   rotSpeed: 100
 --- !u!136 &750105968
 CapsuleCollider:
@@ -5535,7 +5615,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &786560229
@@ -5651,7 +5732,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &804317828
@@ -5767,7 +5849,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &811767597
@@ -5879,7 +5962,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &838362603
@@ -6053,7 +6137,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &862536149
@@ -6348,7 +6433,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &952230580
@@ -6518,7 +6604,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &990987493 stripped
@@ -6787,7 +6874,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1069321416
@@ -11672,7 +11760,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1128822527
@@ -11730,7 +11819,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1131109423
@@ -11904,7 +11994,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1139378579 stripped
@@ -11979,7 +12070,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1148329131
@@ -12470,7 +12562,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1198241941 stripped
@@ -12600,7 +12693,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1249394696 stripped
@@ -12755,7 +12849,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1294885930
@@ -13103,7 +13198,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1336335565
@@ -13219,7 +13315,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1346043671
@@ -13277,7 +13374,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1363421860
@@ -13393,7 +13491,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1385388318
@@ -13451,7 +13550,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1410672014
@@ -13580,7 +13680,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.0074172374
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1432331748
@@ -13754,7 +13855,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1470578983 stripped
@@ -13945,7 +14047,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1507640281 stripped
@@ -14245,7 +14348,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1535985032
@@ -14303,7 +14407,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1545957775
@@ -14415,7 +14520,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1566065622
@@ -14606,7 +14712,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1603331339
@@ -14664,7 +14771,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1613785620
@@ -14722,7 +14830,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1623581008
@@ -15059,7 +15168,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1694847134
@@ -15117,7 +15227,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1700265744
@@ -15175,7 +15286,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1707886636
@@ -15293,6 +15405,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98bc3a6f3e4362c4ab9e19565fcb24ae, type: 3}
+  m_IsPrefabParent: 0
+--- !u!1001 &1732415389
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 408.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 200.02513
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -700.31476
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4669731217426514, guid: 17186679437c0e243a70e19d701babb6, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 17186679437c0e243a70e19d701babb6, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1735236535
 Prefab:
@@ -15560,6 +15714,48 @@ CapsuleCollider:
   m_Height: 8
   m_Direction: 1
   m_Center: {x: 0, y: 3, z: 0}
+--- !u!1001 &1794284172
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 300.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 198.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -615.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548842307212402, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 30a22383fe1b5a841989f79167977c27, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1797098370 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: c52a1ad28de5ec447a225e11be0fe132, type: 3}
@@ -15832,15 +16028,15 @@ Prefab:
       objectReference: {fileID: 750105965}
     - target: {fileID: 4231078140432766, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.09527281
+      value: 0.09527283
       objectReference: {fileID: 0}
     - target: {fileID: 4231078140432766, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.10023692
+      value: -0.100236945
       objectReference: {fileID: 0}
     - target: {fileID: 4231078140432766, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0.051809967
+      value: -0.05181018
       objectReference: {fileID: 0}
     - target: {fileID: 4231078140432766, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.w
@@ -15864,7 +16060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4350388578874462, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.111820824
+      value: 0.11182082
       objectReference: {fileID: 0}
     - target: {fileID: 4350388578874462, guid: da5352fbf0d615c469d380852f1908e2, type: 2}
       propertyPath: m_LocalRotation.y
@@ -16119,7 +16315,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1896345273
@@ -16150,7 +16347,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896345273}
-  m_LocalRotation: {x: -0.0034957784, y: -0.9939522, z: 0.033214502, w: -0.10461204}
+  m_LocalRotation: {x: -0.003495778, y: -0.9939522, z: 0.0332145, w: -0.10461203}
   m_LocalPosition: {x: -1.0409546, y: 0.5700073, z: 4.890442}
   m_LocalScale: {x: 0.25063738, y: 0.2506373, z: 0.2506373}
   m_Children: []
@@ -16396,7 +16593,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &1916831303
@@ -16489,7 +16687,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1951733176
@@ -16676,7 +16875,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1971733413
@@ -16792,7 +16992,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1974281558
@@ -16850,7 +17051,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1988584841
@@ -16908,7 +17110,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &1998941893
@@ -17024,7 +17227,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2017451283
@@ -17082,7 +17286,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2024917655
@@ -17140,7 +17345,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Bird_of_Paradise_01 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 379d951ea34f82c4291e103a95a686b3, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2025561683
@@ -17260,7 +17466,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &2040181424 stripped
@@ -17516,7 +17723,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (27)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2063887450
@@ -17632,7 +17840,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &2074029698 stripped
@@ -17707,7 +17916,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 93bd618738f3de14a943003011ab4d3a, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &2084794977 stripped
@@ -17862,7 +18072,8 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.020125275
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8f7b31d29216f0c4d95b8a78535aba59, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2102112215
@@ -18128,7 +18339,8 @@ Prefab:
       propertyPath: m_Name
       value: Plant_Flower_Red_01 (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
   m_IsPrefabParent: 0
 --- !u!1001 &2140384055
