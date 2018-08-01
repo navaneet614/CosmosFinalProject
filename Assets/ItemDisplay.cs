@@ -12,8 +12,8 @@ public class ItemDisplay : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        names = new string[5];
-        for (int index = 0; index < 5; index++)
+        names = new string[4];
+        for (int index = 0; index < 4; index++)
         {
             names[index] = "NOT FOUND YET";
         }
@@ -32,15 +32,15 @@ public class ItemDisplay : MonoBehaviour
         if (timeCounter > 0)
         {
             GUILayout.Label("Inventory:");
-            for (int index = 0; index < 5; index++)
+            for (int index = 0; index < counter; index++)
             {
-                GUILayout.Label("Item " + (index + 1) + ": " + names[index]);
+                GUILayout.Label(names[index]);
             }
             timeCounter--;
         }
-        if (counter > 4)
+        if (counter > 3)
         {
-            GUILayout.Label("You've collected all the items! Return to the campfire");
+            GUILayout.Label("You've collected all the items! Now you can build a rocket!");
         }
     }
 
