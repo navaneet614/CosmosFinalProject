@@ -9,6 +9,8 @@ public class grab : MonoBehaviour {
     public Text pickF;
     private bool destroyed;
     private bool isClose;
+    private Pause script;
+    public int objNum;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +18,7 @@ public class grab : MonoBehaviour {
         pickF.text = "";
         destroyed = false;
         isClose = true;
+        script = GameObject.Find("Canvas").GetComponent<Pause>();
 	}
     
 
@@ -31,6 +34,7 @@ public class grab : MonoBehaviour {
             {
                 pickF.text = "";
                 destroyed = true;
+                script.toDisplay[objNum] = true;
                 Destroy(gameObject, 0);
             }
         }
