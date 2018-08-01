@@ -8,7 +8,7 @@ public class Pause : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             paused = togglePause();
 
@@ -17,11 +17,25 @@ public class Pause : MonoBehaviour
 
     void OnGUI()
     {
-        if (paused)
+        if (paused) 
         {
-            GUILayout.Label("Game is paused!");
-            if (GUILayout.Button("Click me to unpause"))
+            float sWidth = Screen.currentResolution.width;
+            float sHeight = Screen.currentResolution.height;
+            if (GUI.Button(new Rect(0, 0, sWidth, sHeight), ""))
                 paused = togglePause();
+            GUIStyle style = new GUIStyle();
+            style.fontSize = 200;
+            style.normal.textColor = Color.white;
+            style.alignment = TextAnchor.UpperCenter;
+            GUI.Label(new Rect(sWidth/2-50, sHeight/2-100, 100, 50), "Game Paused!", style);
+            style.fontSize = 50;
+            style.alignment = TextAnchor.LowerCenter;
+            GUI.Label(new Rect(sWidth / 2 - 50, sHeight / 2 + 100, 100, 50), "Click Anywhere to play. Hit escape to quit.", style);
+ 
+        }
+        if (Input.GetKey(KeyCode.Escape) && paused)
+        {
+            Application.Quit();
         }
     }
 
