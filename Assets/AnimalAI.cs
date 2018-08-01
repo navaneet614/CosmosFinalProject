@@ -15,13 +15,27 @@ public class AnimalAI : MonoBehaviour
     public float maxWaitTime = 5f;
     Animator animator;
     private float distance, angle;
-    private bool running;
+    private bool running, paused;
 
 
     void Start()
     {
         animator = GetComponent<Animator>();
         PickPosition();
+    }
+
+    void Update()
+    {
+        if (Time.timeScale == 0f)
+        {
+            paused = true;
+            StopAllCoroutines();
+        }
+        else if (paused)
+        {
+            PickPosition();
+            paused = false;
+        }
     }
 
     void PickPosition()
