@@ -5,7 +5,7 @@ using UnityEngine;
 public class TiltScript : MonoBehaviour {
 
     public float max = 30;
-    private float count;
+    private float fcount, bcount;
 
     // Use this for initialization
     void Start () {
@@ -21,20 +21,46 @@ public class TiltScript : MonoBehaviour {
 
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)))
         {
-            if (count < max)
+            if (fcount < max)
             {
                 transform.Rotate(0, 0, -1);
-                count++;
+                if (bcount > 0)
+                {
+                    bcount--;
+                }
+                else
+                {
+                    fcount++;
+                }
             }
         }
+        //code for tilt backwards
+        //else if((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
+        //{
+        //    if (bcount < max)
+        //    {
+        //        transform.Rotate(0, 0, 1);
+        //        if (fcount > 0)
+        //        {
+        //            fcount--;
+        //        }else
+        //        {
+        //            bcount++;
+        //        }
+        //    }
+        //}
         else
         {
-            if (count != 0)
+            if (fcount != 0)
             {
                 transform.Rotate(0, 0, 1);
-                count--;
+                fcount--;
             }
-
+            else if (bcount != 0)
+            {
+                transform.Rotate(0, 0, -1);
+                bcount--;
+            }
         }
 
     }

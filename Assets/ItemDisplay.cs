@@ -8,6 +8,15 @@ public class ItemDisplay : MonoBehaviour
     private string[] names;
     private int counter;
     private int timeCounter;
+    public Texture inventory;
+    public Texture wood;
+    public Texture treeSap;
+    public Texture fishingLine;
+    public Texture matchBox;
+    public float imageSize = 50;
+    public float offset = 10;
+
+
 
     // Use this for initialization
     void Start()
@@ -31,10 +40,32 @@ public class ItemDisplay : MonoBehaviour
     {
         if (timeCounter > 0)
         {
-            GUILayout.Label("Inventory:");
+            float sWidth = Screen.currentResolution.width;
+            float sHeight = Screen.currentResolution.height;
+            imageSize = sWidth / 1920 * imageSize;
+            GUIStyle style = new GUIStyle();
+            GUI.DrawTexture(new Rect(0, 0, imageSize * 2, imageSize), inventory, ScaleMode.StretchToFill);
+            //GUI.Label(new Rect(), "Inventory:", style);
             for (int index = 0; index < counter; index++)
             {
-                GUILayout.Label(names[index]);
+                //GUILayout.Label(names[index]);
+                Texture t = null;
+                switch (names[index]) {
+                    case "Tree Sap":
+                        t = treeSap;
+                        break;
+                    case "Wood":
+                        t = wood;
+                        break;
+                    case "Fishing Line":
+                        t = fishingLine;
+                        break;
+                    case "Matchbox":
+                        t = matchBox;
+                        break;
+                }
+
+                GUI.DrawTexture(new Rect(index*imageSize + offset*index + imageSize*2,0,imageSize,imageSize), t, ScaleMode.StretchToFill);
             }
             timeCounter--;
         }
@@ -47,6 +78,6 @@ public class ItemDisplay : MonoBehaviour
     public void AddItem(string name)
     {
         names[counter++] = name;
-        timeCounter = 200;
+        timeCounter = 500;
     }
 }
