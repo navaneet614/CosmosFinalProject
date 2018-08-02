@@ -13,6 +13,7 @@ public class ItemDisplay : MonoBehaviour
     public Texture treeSap;
     public Texture fishingLine;
     public Texture matchBox;
+    public Texture rocketIcon;
     public float imageSize = 50;
     public float offset = 10;
     private inspect script;
@@ -73,9 +74,17 @@ public class ItemDisplay : MonoBehaviour
             }
             timeCounter--;
         }
-        if (counter > 3)
+        if (counter > 0&&timeCounter<=0)
         {
-            GUILayout.Label("You've collected all the items! Now you can build a rocket!");
+            //float sWidth = Screen.currentResolution.width;
+            //float sHeight = Screen.currentResolution.height;
+            //GUIStyle style = new GUIStyle();
+            //style.fontSize = 15;
+            //style.normal.textColor = Color.white;
+            //style.alignment = TextAnchor.UpperCenter;
+            //GUI.Label(new Rect(sWidth / 2 - 100, 0, 200, 50), "You've collected all the items! Now you can build a rocket!", style);
+            GUI.DrawTexture(new Rect(0, 0, imageSize, imageSize), rocketIcon, ScaleMode.StretchToFill);
+
         }
     }
 

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Terrain2.unity
     guid: 35214647486256c4daf6cdd44c935081
+  - enabled: 1
+    path: Assets/Outro.unity
+    guid: 5466c2c06eb494db29cfe0841f533b4b
   m_configObjects: {}
