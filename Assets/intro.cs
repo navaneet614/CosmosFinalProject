@@ -7,7 +7,7 @@ public class intro : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GameObject.Find("Camera").GetComponent<CinemachineBrain>().enabled = false;
+        //GameObject.Find("Camera").GetComponent<CinemachineBrain>().enabled = false;
         StartCoroutine("ToggleStuff");
 	}
 	
@@ -22,7 +22,7 @@ public class intro : MonoBehaviour {
         GetComponent<Rigidbody>().useGravity = true;
         GameObject.Find("Effect_07").SetActive(false);
         transform.Find("pCube11").gameObject.SetActive(true);
-        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down*300, ForceMode.Impulse);
+        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down*100, ForceMode.Impulse);
         StartCoroutine("EnableStuff");
     }
 
