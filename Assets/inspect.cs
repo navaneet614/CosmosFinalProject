@@ -14,6 +14,7 @@ public class inspect : MonoBehaviour
     public string objName;
     public int senseRadius;
     public bool itemsCollected;
+    public string message;
 
     // Use this for initialization
     void Start()
@@ -42,7 +43,7 @@ public class inspect : MonoBehaviour
                 {
                     SceneManager.LoadScene("Outro");
                 }
-                pickF.text = "Maybe I could use this to build a rocket...?";
+                pickF.text = message;
             }
         }
         else
