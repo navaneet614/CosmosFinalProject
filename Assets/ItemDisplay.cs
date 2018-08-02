@@ -48,8 +48,8 @@ public class ItemDisplay : MonoBehaviour
         {
             float sWidth = Screen.currentResolution.width;
             float sHeight = Screen.currentResolution.height;
-            float imageW = sWidth / 1920 * imageSize;
-            float imageH = sHeight / 1080 * imageSize;
+            float imageW = sWidth / 1920f * imageSize;
+            float imageH = sHeight / 1080f * imageSize;
             GUIStyle style = new GUIStyle();
             GUI.DrawTexture(new Rect(0, 0, imageW * 2, imageH), inventory, ScaleMode.StretchToFill);
             //GUI.Label(new Rect(), "Inventory:", style);
