@@ -22,7 +22,7 @@ public class intro : MonoBehaviour {
         GetComponent<Rigidbody>().useGravity = true;
         GameObject.Find("Effect_07").SetActive(false);
         transform.Find("pCube11").gameObject.SetActive(true);
-        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down*100, ForceMode.Impulse);
+        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down*10, ForceMode.Impulse);
         StartCoroutine("EnableStuff");
     }
 
