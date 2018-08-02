@@ -8,12 +8,13 @@ public class ItemDisplay : MonoBehaviour
     private string[] names;
     private int counter;
     private int timeCounter;
+    public int numItems = 4;
     public Texture inventory;
     public Texture wood;
     public Texture treeSap;
     public Texture fishingLine;
     public Texture matchBox;
-    public Texture rocketIcon;
+    public Texture empty;
     public float imageSize = 50;
     public float offset = 10;
     private inspect script;
@@ -51,7 +52,7 @@ public class ItemDisplay : MonoBehaviour
             GUIStyle style = new GUIStyle();
             GUI.DrawTexture(new Rect(0, 0, imageSize * 2, imageSize), inventory, ScaleMode.StretchToFill);
             //GUI.Label(new Rect(), "Inventory:", style);
-            for (int index = 0; index < counter; index++)
+            for (int index = 0; index < numItems; index++)
             {
                 //GUILayout.Label(names[index]);
                 Texture t = null;
@@ -68,13 +69,16 @@ public class ItemDisplay : MonoBehaviour
                     case "Matchbox":
                         t = matchBox;
                         break;
+                    default:
+                        t = empty;
+                        break;
                 }
 
                 GUI.DrawTexture(new Rect(index*imageSize + offset*(index+1) + imageSize*2,0,imageSize,imageSize), t, ScaleMode.StretchToFill);
             }
             timeCounter--;
         }
-        if (counter > 0&&timeCounter<=0)
+        if (counter > 3&&timeCounter<=0)
         {
             //float sWidth = Screen.currentResolution.width;
             //float sHeight = Screen.currentResolution.height;
@@ -83,7 +87,7 @@ public class ItemDisplay : MonoBehaviour
             //style.normal.textColor = Color.white;
             //style.alignment = TextAnchor.UpperCenter;
             //GUI.Label(new Rect(sWidth / 2 - 100, 0, 200, 50), "You've collected all the items! Now you can build a rocket!", style);
-            GUI.DrawTexture(new Rect(0, 0, imageSize, imageSize), rocketIcon, ScaleMode.StretchToFill);
+            //GUI.DrawTexture(new Rect(0, 0, imageSize, imageSize), rocketIcon, ScaleMode.StretchToFill);
 
         }
     }
