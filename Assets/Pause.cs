@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    public Texture pauseScreen;
     private bool paused = false;
 
     void Update()
@@ -23,14 +24,17 @@ public class Pause : MonoBehaviour
             float sHeight = Screen.currentResolution.height;
             if (GUI.Button(new Rect(0, 0, sWidth, sHeight), ""))
                 paused = togglePause();
-            GUIStyle style = new GUIStyle();
-            style.fontSize = 200;
-            style.normal.textColor = Color.white;
-            style.alignment = TextAnchor.UpperCenter;
-            GUI.Label(new Rect(sWidth/2-50, sHeight/2-100, 100, 50), "Game Paused!", style);
-            style.fontSize = 50;
-            style.alignment = TextAnchor.LowerCenter;
-            GUI.Label(new Rect(sWidth / 2 - 50, sHeight / 2 + 100, 100, 50), "Click Anywhere to play. Hit escape to quit.", style);
+            //GUIStyle style = new GUIStyle();
+            //style.fontSize = 200;
+            //style.normal.textColor = Color.white;
+            //style.alignment = TextAnchor.UpperCenter;
+            //GUI.Label(new Rect(sWidth/2-50, sHeight/2-100, 100, 50), "Game Paused!", style);
+            //style.fontSize = 50;
+            //style.alignment = TextAnchor.LowerCenter;
+            //GUI.Label(new Rect(sWidth / 2 - 50, sHeight / 2 + 100, 100, 50), "Click Anywhere to play. Hit escape to quit.", style);
+
+            
+            GUI.DrawTexture(new Rect(sWidth/4, sHeight/2, sWidth/2, sHeight/2), pauseScreen, ScaleMode.StretchToFill);
  
         }
         if (Input.GetKey(KeyCode.Escape) && paused)
