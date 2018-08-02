@@ -12,6 +12,7 @@ public class grab : MonoBehaviour
     private bool isClose;
     private ItemDisplay script;
     public string objName;
+    public int senseRadius;
 
     // Use this for initialization
     void Start()
@@ -21,6 +22,7 @@ public class grab : MonoBehaviour
         destroyed = false;
         isClose = true;
         script = GameObject.Find("fireBro2").GetComponent<ItemDisplay>();
+        senseRadius = 8;
     }
 
 
@@ -28,7 +30,7 @@ public class grab : MonoBehaviour
     void Update()
     {
         Vector3 pos = man.transform.position;
-        if (!destroyed && Vector3.Distance(pos, transform.position) <= 5)
+        if (!destroyed && Vector3.Distance(pos, transform.position) <= senseRadius)
         {
             isClose = true;
             pickF.text = "Press 'F' to pick up the object.";

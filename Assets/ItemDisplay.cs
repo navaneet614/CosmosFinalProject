@@ -15,7 +15,7 @@ public class ItemDisplay : MonoBehaviour
     public Texture matchBox;
     public float imageSize = 50;
     public float offset = 10;
-
+    private inspect script;
 
 
     // Use this for initialization
@@ -28,12 +28,16 @@ public class ItemDisplay : MonoBehaviour
         }
         counter = 0;
         timeCounter = 0;
+        script = GameObject.Find("fireworksBoxAsset").GetComponent<inspect>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (counter >= 4)
+        {
+            script.itemsCollected = true;
+        }
     }
 
     private void OnGUI()

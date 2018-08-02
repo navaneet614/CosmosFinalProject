@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class inspect : MonoBehaviour
@@ -11,6 +12,8 @@ public class inspect : MonoBehaviour
     private bool isClose;
     private ItemDisplay script;
     public string objName;
+    public int senseRadius;
+    public bool itemsCollected;
 
     // Use this for initialization
     void Start()
@@ -19,6 +22,8 @@ public class inspect : MonoBehaviour
         pickF.text = "";
         isClose = true;
         script = GameObject.Find("fireBro2").GetComponent<ItemDisplay>();
+        senseRadius = 8;
+        itemsCollected = false;
     }
 
 
@@ -26,13 +31,17 @@ public class inspect : MonoBehaviour
     void Update()
     {
         Vector3 pos = man.transform.position;
-        if (Vector3.Distance(pos, transform.position) <= 5)
+        if (Vector3.Distance(pos, transform.position) <= senseRadius)
         {
             isClose = true;
             pickF.text = "Hold 'I' to inspect.";
             //the message to press f
             if (Input.GetKey(KeyCode.I))
             {
+                if (itemsCollected)
+                {
+                    SceneManager.LoadScene("Outro");
+                }
                 pickF.text = "Maybe I could use this to build a rocket...?";
             }
         }
