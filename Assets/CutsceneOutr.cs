@@ -44,7 +44,7 @@ public class CutsceneOutr : MonoBehaviour {
 
 	private void Update()
 	{
-        if((time2 - time1) >= 1){
+        if((time2 - time1) >= 2){
             transform.Translate(Vector3.forward * pspeed * Time.deltaTime);
             if (flying)
             {
@@ -91,7 +91,7 @@ public class CutsceneOutr : MonoBehaviour {
 
     IEnumerator Wait(){
         time1 = Time.time;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         time2 = Time.time;
     }
 
