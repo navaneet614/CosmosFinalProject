@@ -7,6 +7,7 @@ public class intro : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        GameObject.Find("Camera").GetComponent<CinemachineBrain>().enabled = false;
         StartCoroutine("ToggleStuff");
 	}
 	
@@ -21,15 +22,21 @@ public class intro : MonoBehaviour {
         GetComponent<Rigidbody>().useGravity = true;
         GameObject.Find("Effect_07").SetActive(false);
         transform.Find("pCube11").gameObject.SetActive(true);
+        gameObject.GetComponent<Rigidbody>().AddForce(Vector3.down*300, ForceMode.Impulse);
         StartCoroutine("EnableStuff");
     }
 
 
     IEnumerator EnableStuff()
     {
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(1);
         GameObject.Find("pCube11").GetComponent<TiltScript>().enabled = true;
         gameObject.GetComponent<fireBroUserControl1>().enabled = true;
+        
+        if (GameObject.Find("fireBro2").transform.position.y <= 250)
+        {
+            GameObject.Find("Camera").GetComponent<CinemachineBrain>().enabled = true;
+        }
     }
 
 }
