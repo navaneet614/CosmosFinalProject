@@ -56,7 +56,7 @@ public class CutsceneOutr : MonoBehaviour {
                 rspeed = rspeed * 1.03f;
             }
 
-            if (rocket.transform.position.y >= 1000)
+            if (rocket!=null && rocket.transform.position.y >= 1000)
             {
                 rspeed = 0f;
                 cspeed = 0f;
