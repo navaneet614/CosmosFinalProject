@@ -35,7 +35,7 @@ public class Pause : MonoBehaviour
             //GUI.Label(new Rect(sWidth / 2 - 50, sHeight / 2 + 100, 100, 50), "Click Anywhere to play. Hit escape to quit.", style);
 
             
-            GUI.DrawTexture(new Rect(sWidth/4, sHeight/2, sWidth/2, sHeight/2), pauseScreen, ScaleMode.StretchToFill);
+            GUI.DrawTexture(new Rect(sWidth/4, sHeight/4, sWidth/2, sHeight/2), pauseScreen, ScaleMode.StretchToFill);
  
         }
         if (Input.GetKey(KeyCode.Escape) && paused)
