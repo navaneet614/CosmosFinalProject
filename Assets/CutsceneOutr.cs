@@ -11,14 +11,14 @@ public class CutsceneOutr : MonoBehaviour {
     private GameObject rocket;
     private GameObject cam;
     private GameObject[] fireworks;
-    private bool destroyed;
-	
+    private bool flying = false;
+    private bool side = false;
+    private bool shaken = false;
 
 	void Start()
     {
         rocket = GameObject.Find("Rocket");
         cam = GameObject.Find("Camera");
-        destroyed = false;
         fireworks = new GameObject[14];
         fireworks[0] = GameObject.Find("Effect_07");
         fireworks[1] = GameObject.Find("Effect_07 (1)");
@@ -50,26 +50,37 @@ public class CutsceneOutr : MonoBehaviour {
         if(rocket.transform.position.y >= 1000){
             rspeed = 0f;
             cspeed = 0f;
-            destroyed = true;
             Destroy(GameObject.Find("Rocket"));
             for (int index = 0; index < fireworks.Length; index++) {
                 fireworks[index].SetActive(true);
             }
         }
-        if (destroyed) {
-            // transition to poem
+
+        if (shaken)
+        {
+            if (side)
+            {
+                rocket.transform.Translate(0.1f, 0, 0);
+                side = false;
+            }
+            else
+            {
+                rocket.transform.Translate(-0.1f, 0, 0);
+                side = true;
+            }
         }
+    //POEM
         
 	}
 
     IEnumerator Fly(){
+        shaken = true;
         yield return new WaitForSeconds(2);
+        shaken = false;
         flying = true;
         Destroy(GameObject.Find("Effect_03"));
         Destroy(GameObject.Find("pCube11"));
     }
-
-	private bool flying = false;
 
 	private void OnTriggerEnter(Collider other)
 	{
@@ -78,13 +89,6 @@ public class CutsceneOutr : MonoBehaviour {
             pspeed = 0f;
             StartCoroutine("Fly");
         } 
-        //if (other.name=="stopFly"){
-        //    rspeed = 0f;
-        //    cspeed = 0f;
-
-
-
-        //}
 
 	}
 
