@@ -65,7 +65,7 @@ public class ItemDisplay : MonoBehaviour
                         break;
                 }
 
-                GUI.DrawTexture(new Rect(index*imageSize + offset*index + imageSize*2,0,imageSize,imageSize), t, ScaleMode.StretchToFill);
+                GUI.DrawTexture(new Rect(index*imageSize + offset*(index+1) + imageSize*2,0,imageSize,imageSize), t, ScaleMode.StretchToFill);
             }
             timeCounter--;
         }
