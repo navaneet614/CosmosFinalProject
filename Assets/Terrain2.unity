@@ -1546,7 +1546,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 59017711}
-  m_LocalRotation: {x: 0.030451328, y: 0.96276677, z: 0.04601053, w: 0.26464295}
+  m_LocalRotation: {x: 0.03045133, y: 0.9627668, z: 0.046010528, w: 0.26464295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.9999999}
   m_Children:
@@ -6783,6 +6783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 2084794979}
   objName: Matchbox
+  senseRadius: 6
 --- !u!1 &315609619
 GameObject:
   m_ObjectHideFlags: 0
@@ -7993,7 +7994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5fe73c0203b91746955daafd5e4d8f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max: 50
+  max: 35
 --- !u!1 &353645260
 GameObject:
   m_ObjectHideFlags: 0
@@ -8296,6 +8297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 1198241943}
   objName: Fishing Line
+  senseRadius: 6
 --- !u!4 &359972256 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f9ab1674427c3f04e9f91f43eca7bcf7, type: 3}
@@ -8314,8 +8316,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 68, y: 500, z: 2}
-  m_Center: {x: 0, y: 250, z: 22}
+  m_Size: {x: 100, y: 500, z: 2}
+  m_Center: {x: -15, y: 250, z: 22}
 --- !u!65 &360505389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8326,8 +8328,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 500, z: 50}
-  m_Center: {x: -33, y: 250, z: 0}
+  m_Size: {x: 2, y: 500, z: 100}
+  m_Center: {x: -36.5, y: 250, z: 0}
 --- !u!65 &360505390
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8338,7 +8340,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 500, z: 50}
+  m_Size: {x: 2, y: 500, z: 100}
   m_Center: {x: 27, y: 250, z: 0}
 --- !u!65 &360505391
 BoxCollider:
@@ -8350,8 +8352,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 62, y: 500, z: 2}
-  m_Center: {x: -3, y: 250, z: -22}
+  m_Size: {x: 100, y: 500, z: 2}
+  m_Center: {x: -15, y: 250, z: -25}
+--- !u!65 &360505393
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 360505387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 500, z: 4}
+  m_Center: {x: -34, y: 250, z: -25}
 --- !u!1001 &364741893
 Prefab:
   m_ObjectHideFlags: 0
@@ -12162,6 +12176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 748979495}
   objName: Wood
+  senseRadius: 6
 --- !u!4 &580672187 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 484e58fdc6658fa49bad665745fbfeae, type: 3}
@@ -15530,6 +15545,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49dd080765bfa514dbc59e8ce7827a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventory: {fileID: 2800000, guid: 524240766e263854ca5d2cd3f01b3ce7, type: 3}
+  wood: {fileID: 2800000, guid: 3553f230acf31a24c99b072f9a92f9f7, type: 3}
+  treeSap: {fileID: 2800000, guid: bbf8f59446fc14c4d98027fe48a8c1d3, type: 3}
+  fishingLine: {fileID: 2800000, guid: 53a98a0df9f117a40b8dd3daa91f74b0, type: 3}
+  matchBox: {fileID: 2800000, guid: df03fb2bb78395b40ba419fa507a0b6d, type: 3}
+  imageSize: 50
+  offset: 0
 --- !u!114 &750105967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29747,6 +29769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 1182034883}
   objName: Tree Sap
+  senseRadius: 6
 --- !u!4 &1508570850 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 767f7693067f6f54dae99825926995c6, type: 3}
@@ -34370,6 +34393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 1267935916}
   objName: Fireworks Box
+  senseRadius: 6
 --- !u!4 &1739825824 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 89a211878f8836046a592c864aff893e, type: 3}
@@ -37204,7 +37228,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1896345273}
-  m_LocalRotation: {x: 0.03339796, y: -4.299714e-15, z: 1.4368185e-16, w: 0.99944216}
+  m_LocalRotation: {x: 0.033397965, y: -0.0000000037232126, z: 1.2441714e-10, w: 0.99944216}
   m_LocalPosition: {x: 0, y: 0.5700073, z: -5}
   m_LocalScale: {x: 0.25063738, y: 0.2506373, z: 0.2506373}
   m_Children: []
@@ -37311,7 +37335,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b37aee5675f46364a8832bc38b039e7e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -37324,7 +37348,7 @@ AudioSource:
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
-  BypassListenerEffects: 0
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -38388,7 +38412,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968614405}
-  m_LocalRotation: {x: 0.024290692, y: 0.9614369, z: 0.06838053, w: 0.26527938}
+  m_LocalRotation: {x: 0.024290694, y: 0.961437, z: 0.06838052, w: 0.26527935}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.9999999}
   m_Children:
