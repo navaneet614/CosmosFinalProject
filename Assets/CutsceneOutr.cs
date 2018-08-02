@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CutsceneOutr : MonoBehaviour {
     
-    public float pspeed = 3f;
+    public float pspeed = 2f;
     public float rspeed = 4f;
     public float cspeed = .5f;
     public float time1 = 0;
@@ -16,6 +16,9 @@ public class CutsceneOutr : MonoBehaviour {
     private bool flying = false;
     private bool side = false;
     private bool shaken = false;
+    private bool rocketDead = false;
+    private bool playerDead = false;
+
 
 	void Start()
     {
@@ -48,15 +51,21 @@ public class CutsceneOutr : MonoBehaviour {
             transform.Translate(Vector3.forward * pspeed * Time.deltaTime);
             if (flying)
             {
-                rocket.transform.Translate(0, rspeed, 0);
-                cam.transform.Translate(0, rspeed, -cspeed);
+                rocket.transform.Translate(0f, rspeed, 0f);
+                cam.transform.Translate(0f, rspeed, -cspeed);
+                rspeed = rspeed * 1.03f;
             }
 
             if (rocket.transform.position.y >= 1000)
             {
                 rspeed = 0f;
                 cspeed = 0f;
-                Destroy(GameObject.Find("Rocket"));
+                if (!rocketDead)
+                {
+                    Destroy(GameObject.Find("Rocket"));
+                    rocketDead = true;
+                    flying = false;
+                }
                 for (int index = 0; index < fireworks.Length; index++)
                 {
                     fireworks[index].SetActive(true);
@@ -85,8 +94,10 @@ public class CutsceneOutr : MonoBehaviour {
         yield return new WaitForSeconds(2);
         shaken = false;
         flying = true;
-        Destroy(GameObject.Find("Effect_03"));
-        Destroy(GameObject.Find("pCube11"));
+        if (!playerDead){
+            Destroy(GameObject.Find("Effect_03"));
+            Destroy(GameObject.Find("pCube11"));
+        }
     }
 
     IEnumerator Wait(){
