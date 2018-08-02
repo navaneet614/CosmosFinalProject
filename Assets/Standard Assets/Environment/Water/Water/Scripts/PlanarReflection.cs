@@ -10,7 +10,7 @@ namespace UnityStandardAssets.Water
     {
         public LayerMask reflectionMask;
         public bool reflectSkybox = false;
-        public Color clearColor = Color.grey;
+        public Color clearColor = Color.blue;
         public String reflectionSampler = "_ReflectionTex";
         public float clipPlaneOffset = 0.07F;
 
@@ -98,6 +98,8 @@ namespace UnityStandardAssets.Water
 
             m_HelperCameras[currentCam] = true;
         }
+
+
 
 
         public void LateUpdate()
