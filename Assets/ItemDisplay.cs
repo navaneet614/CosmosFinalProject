@@ -48,9 +48,10 @@ public class ItemDisplay : MonoBehaviour
         {
             float sWidth = Screen.currentResolution.width;
             float sHeight = Screen.currentResolution.height;
-            imageSize = sWidth / 1920 * imageSize;
+            float imageW = sWidth / 1920 * imageSize;
+            float imageH = sHeight / 1080 * imageSize;
             GUIStyle style = new GUIStyle();
-            GUI.DrawTexture(new Rect(0, 0, imageSize * 2, imageSize), inventory, ScaleMode.StretchToFill);
+            GUI.DrawTexture(new Rect(0, 0, imageW * 2, imageH), inventory, ScaleMode.StretchToFill);
             //GUI.Label(new Rect(), "Inventory:", style);
             for (int index = 0; index < numItems; index++)
             {
@@ -74,7 +75,7 @@ public class ItemDisplay : MonoBehaviour
                         break;
                 }
 
-                GUI.DrawTexture(new Rect(index*imageSize + offset*(index+1) + imageSize*2,0,imageSize,imageSize), t, ScaleMode.StretchToFill);
+                GUI.DrawTexture(new Rect(index*imageW + offset*(index+1) + imageH*2,0,imageW,imageH), t, ScaleMode.StretchToFill);
             }
             timeCounter--;
         }
