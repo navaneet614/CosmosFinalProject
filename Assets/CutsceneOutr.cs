@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CutsceneOutr : MonoBehaviour {
     
-    public float pspeed = 5f;
+    public float pspeed = 3f;
     public float rspeed = 4f;
     public float cspeed = .5f;
+    public float time1 = 0;
+    public float time2 = 0;
 
     private GameObject rocket;
     private GameObject cam;
@@ -17,6 +19,7 @@ public class CutsceneOutr : MonoBehaviour {
 
 	void Start()
     {
+        StartCoroutine("Wait");
         rocket = GameObject.Find("Rocket");
         cam = GameObject.Find("Camera");
         fireworks = new GameObject[14];
@@ -41,36 +44,40 @@ public class CutsceneOutr : MonoBehaviour {
 
 	private void Update()
 	{
-        transform.Translate(Vector3.forward * pspeed * Time.deltaTime);
-        if (flying){
-            rocket.transform.Translate(0, rspeed, 0);
-            cam.transform.Translate(0, rspeed, -cspeed);
+        if((time2 - time1) >= 1){
+            transform.Translate(Vector3.forward * pspeed * Time.deltaTime);
+            if (flying)
+            {
+                rocket.transform.Translate(0, rspeed, 0);
+                cam.transform.Translate(0, rspeed, -cspeed);
+            }
+
+            if (rocket.transform.position.y >= 1000)
+            {
+                rspeed = 0f;
+                cspeed = 0f;
+                Destroy(GameObject.Find("Rocket"));
+                for (int index = 0; index < fireworks.Length; index++)
+                {
+                    fireworks[index].SetActive(true);
+                }
+            }
+
+            if (shaken)
+            {
+                if (side)
+                {
+                    rocket.transform.Translate(0.1f, 0, 0);
+                    side = false;
+                }
+                else
+                {
+                    rocket.transform.Translate(-0.1f, 0, 0);
+                    side = true;
+                }
+            }
         }
 
-        if(rocket.transform.position.y >= 1000){
-            rspeed = 0f;
-            cspeed = 0f;
-            Destroy(GameObject.Find("Rocket"));
-            for (int index = 0; index < fireworks.Length; index++) {
-                fireworks[index].SetActive(true);
-            }
-        }
-
-        if (shaken)
-        {
-            if (side)
-            {
-                rocket.transform.Translate(0.1f, 0, 0);
-                side = false;
-            }
-            else
-            {
-                rocket.transform.Translate(-0.1f, 0, 0);
-                side = true;
-            }
-        }
-    //POEM
-        
 	}
 
     IEnumerator Fly(){
@@ -80,6 +87,12 @@ public class CutsceneOutr : MonoBehaviour {
         flying = true;
         Destroy(GameObject.Find("Effect_03"));
         Destroy(GameObject.Find("pCube11"));
+    }
+
+    IEnumerator Wait(){
+        time1 = Time.time;
+        yield return new WaitForSeconds(1);
+        time2 = Time.time;
     }
 
 	private void OnTriggerEnter(Collider other)
