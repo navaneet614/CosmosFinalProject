@@ -6,7 +6,7 @@ public class ItemDisplay : MonoBehaviour
 {
 
     private string[] names;
-    private int counter;
+    public int counter;
     private int timeCounter;
     public int numItems = 4;
     public Texture inventory;
