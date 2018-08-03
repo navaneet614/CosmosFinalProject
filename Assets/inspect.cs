@@ -23,7 +23,6 @@ public class inspect : MonoBehaviour
         pickF.text = "";
         isClose = true;
         script = GameObject.Find("fireBro2").GetComponent<ItemDisplay>();
-        senseRadius = 8;
         itemsCollected = false;
     }
 

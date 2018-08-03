@@ -351,7 +351,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 501471270}
   objName: Cabin
-  senseRadius: 4
+  senseRadius: 10
   itemsCollected: 0
   message: An extremely old cabin, that hasn't been lived in for ages.
 --- !u!1001 &13188715
@@ -1591,7 +1591,7 @@ MonoBehaviour:
   objName: Bridge
   senseRadius: 15
   itemsCollected: 0
-  message: A large stone bridge. Hope it does not break.
+  message: A large stone bridge.
 --- !u!1001 &112483364
 Prefab:
   m_ObjectHideFlags: 0
@@ -5749,8 +5749,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 443281410}
-  m_LocalRotation: {x: 0.05691702, y: -0.93702173, z: -0.30754182, w: -0.15546317}
-  m_LocalPosition: {x: 437.44592, y: 190.72745, z: -796.63855}
+  m_LocalRotation: {x: 0.24931754, y: -0.17131211, z: -0.03905065, w: -0.95234865}
+  m_LocalPosition: {x: 414.72498, y: 178.42863, z: -826.83716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16184,8 +16184,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1468709546}
-  m_LocalRotation: {x: 0.05691702, y: -0.93702173, z: -0.30754182, w: -0.15546317}
-  m_LocalPosition: {x: 411.0495, y: 131.95523, z: -718.11957}
+  m_LocalRotation: {x: 0.24931754, y: -0.17131211, z: -0.03905065, w: -0.95234865}
+  m_LocalPosition: {x: 414.72498, y: 180.82863, z: -826.83716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19179,7 +19179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickF: {fileID: 188529107}
   objName: Campfire
-  senseRadius: 4
+  senseRadius: 5
   itemsCollected: 0
   message: An ancient campfire. The embers have died out a long time ago.
 --- !u!1001 &1739825821
