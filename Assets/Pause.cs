@@ -8,12 +8,16 @@ public class Pause : MonoBehaviour
     public Texture pauseScreen;
     private bool paused = false;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
             paused = togglePause();
-
         }
     }
 
@@ -41,6 +45,7 @@ public class Pause : MonoBehaviour
         if (Input.GetKey(KeyCode.Escape) && paused)
         {
             paused = togglePause();
+            Cursor.visible = true;
             SceneManager.LoadScene("Menu_Scene");
         }
     }

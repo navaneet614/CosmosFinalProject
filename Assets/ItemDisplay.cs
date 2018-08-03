@@ -24,10 +24,6 @@ public class ItemDisplay : MonoBehaviour
     void Start()
     {
         names = new string[4];
-        for (int index = 0; index < 4; index++)
-        {
-            names[index] = "NOT FOUND YET";
-        }
         counter = 0;
         timeCounter = 0;
         script = GameObject.Find("fireworksBoxAsset").GetComponent<inspect>();
@@ -78,18 +74,6 @@ public class ItemDisplay : MonoBehaviour
                 GUI.DrawTexture(new Rect(index*imageW + offset*(index+1) + imageH*2,0,imageW,imageH), t, ScaleMode.StretchToFill);
             }
             timeCounter--;
-        }
-        if (counter > 3&&timeCounter<=0)
-        {
-            //float sWidth = Screen.currentResolution.width;
-            //float sHeight = Screen.currentResolution.height;
-            //GUIStyle style = new GUIStyle();
-            //style.fontSize = 15;
-            //style.normal.textColor = Color.white;
-            //style.alignment = TextAnchor.UpperCenter;
-            //GUI.Label(new Rect(sWidth / 2 - 100, 0, 200, 50), "You've collected all the items! Now you can build a rocket!", style);
-            //GUI.DrawTexture(new Rect(0, 0, imageSize, imageSize), rocketIcon, ScaleMode.StretchToFill);
-
         }
     }
 
