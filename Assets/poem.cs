@@ -9,7 +9,7 @@ public class poem : MonoBehaviour
 
     public Text words;
 
-    public Texture title;
+    public Texture title, inspired;
 
     private GameObject cam; 
 
@@ -56,10 +56,11 @@ public class poem : MonoBehaviour
             style.fontSize = 30;
             style.normal.textColor = Color.white;
             style.alignment = TextAnchor.UpperCenter;
-            GUI.DrawTexture(new Rect(sWidth / 2 - 200, 10, 400, 210), title, ScaleMode.StretchToFill);
-            GUI.Label(new Rect(sWidth / 2 - 200, 220, 50, sHeight), "Happiness comes in small\nbursts of\nfireworks and I,\nI fizzle out.\n\nThe embers\nleft behind\n\nf o r g o t t e n,\n\nare reminders\nof past innocence and\nnaivety\n\nso gullible, so sweet\nso…\n\nt r u s t i n g.", style);
-            GUI.Label(new Rect(sWidth / 2 + 200, 220, 50, sHeight), "Shattered, falling,\nI am brought\nback to\nthose days\nonce more\n\nas a new spark,\na spark within me\nburns\nbrighter\n\ns t r o n g e r,\n\nleaving me\nfull of wonder\neager to explore\n\nto find a new day,\nto forge a new me.", style);
-            style.fontSize = 15;
+            GUI.DrawTexture(new Rect(sWidth / 2 - 400, 10, 400, 210), inspired, ScaleMode.StretchToFill);
+            GUI.DrawTexture(new Rect(sWidth / 2, 10, 400, 210), title, ScaleMode.StretchToFill);
+            GUI.Label(new Rect(sWidth / 2 - 200, 230, 50, sHeight), "Happiness comes in small\nbursts of\nfireworks and I,\nI fizzle out.\n\nThe embers\nleft behind\n\nf o r g o t t e n,\n\nare reminders\nof past innocence and\nnaivety\n\nso gullible, so sweet\nso…\n\nt r u s t i n g.", style);
+            GUI.Label(new Rect(sWidth / 2 + 200, 230, 50, sHeight), "Shattered, falling,\nI am brought\nback to\nthose days\nonce more\n\nas a new spark,\na spark within me\nburns\nbrighter\n\ns t r o n g e r,\n\nleaving me\nfull of wonder\neager to explore\n\nto find a new day,\nto forge a new me.", style);
+            style.fontSize = 20;
             GUI.Label(new Rect(sWidth / 2 - 200, sHeight * 7 / 8, + 400, sHeight), "Click anywhere to return to the main menu", style);
         }
     }

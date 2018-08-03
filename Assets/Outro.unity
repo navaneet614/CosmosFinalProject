@@ -10991,6 +10991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   words: {fileID: 1514140249}
   title: {fileID: 2800000, guid: 3db15a484247e8640a1e061a79b8cedd, type: 3}
+  inspired: {fileID: 2800000, guid: e49ce7fbca8d6df449cd24a05df77c16, type: 3}
 --- !u!1 &1514933168
 GameObject:
   m_ObjectHideFlags: 0
