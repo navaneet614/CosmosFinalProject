@@ -69,7 +69,9 @@ public class CutsceneOutr : MonoBehaviour {
                 for (int index = 0; index < fireworks.Length; index++)
                 {
                     fireworks[index].SetActive(true);
+
                 }
+                StartCoroutine("FireworkThing");
             }
 
             if (shaken)
@@ -90,14 +92,17 @@ public class CutsceneOutr : MonoBehaviour {
 	}
 
     IEnumerator Fly(){
+        if (!playerDead)
+        {
+            Destroy(GameObject.Find("Effect_04"));
+            Destroy(GameObject.Find("Effect_04 (1)"));
+            Destroy(GameObject.Find("pCube11"));
+        }
         shaken = true;
         yield return new WaitForSeconds(2);
         shaken = false;
         flying = true;
-        if (!playerDead){
-            Destroy(GameObject.Find("Effect_03"));
-            Destroy(GameObject.Find("pCube11"));
-        }
+        
     }
 
     IEnumerator Wait(){
@@ -115,5 +120,14 @@ public class CutsceneOutr : MonoBehaviour {
         } 
 
 	}
+
+    IEnumerator FireworkThing()
+    {
+        yield return new WaitForSeconds(4);
+        for (int index = 0; index < fireworks.Length; index++)
+        {
+            fireworks[index].SetActive(false);
+        }
+    }
 
 }
